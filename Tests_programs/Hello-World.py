@@ -1,15 +1,12 @@
-# BAI 1150: Introduction to Python Programming for AI!
-# Todd Simpson - August 25th, 2026
-# This is a simple Python program that prints "Hello, World!" to the console.
-#
+import pandas as pd
 
-print("\nHello, World!\n")
+print("Pandas version:", pd.__version__)
 
+# Simple test DataFrame
+df = pd.DataFrame({
+    "Name": ["Alice", "Bob", "Charlie"],
+    "Score": [90, 85, 95]
+})
 
-
-# My first Python program
-print()  # Print a blank line
-print("Hello, World!")
-print()  # Print another blank line
-
-# END OF FILE
+print(df)
+print("\nAverage score:", df["Score"].mean())
